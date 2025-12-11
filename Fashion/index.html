@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion School - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+</head>
+
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo-container">
+                    <img src="images/logo.png" alt="FASHION PASS DESIGN & TAILORING" class="logo">
+                    <div>
+                        <div class="school-name">FASHION PASS DESIGN & TAILORING</div>
+
+                        <div class="school-motto">Look Good,Feel Good</div>
+                    </div>
+                </div>
+
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Who we are.. </h1>
+            <p>Fashion Pass Design & Tailoring is a training institution Registered with <B> NITA
+                    Reg.No.NITA/LEVY/FRBA/13245,Based in Kapsabet,Nandi County,Kenya.it is acentre of excellence in
+                    training fashion and textile designers the world needs today.Our aim is to give the trainee the
+                    knowledge,skills and attitudes in Dressmaking,tailoring,pattern drafting and garment fashion
+                    Desing.</B>.
+            </p>
+            <a href="courses.html" class="cta-button">Explore Our Courses</a>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container">
+        <h2 class="section-title">Why Choose Fashion Pass ?</h2>
+
+        <div class="features">
+            <div class="feature-card">
+                <img src="images/modern.jpg" alt="Modern Tailoring" class="feature-img">
+                <div class="feature-content">
+                    <h3>Modern Facilities</h3>
+                    <p>Our state-of-the-art classrooms and modern machines crafted for practical, industry-ready fashion
+                        training.</p>
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <img src="images/tas.jpg" alt="classrooms " class="feature-img">
+                <div class="feature-content">
+                    <h3>Expert Instructors</h3>
+                    <p>Learn from seasoned fashion pros who bring real industry experience to every lesson.</p>
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <img src="images/learn.jpg" alt="Student Collaboration" class="feature-img">
+                <div class="feature-content">
+                    <h3>Hands-on Learning</h3>
+                    <p>Fashion Pass is dedicated to providing top-quality fashion and design education, integrating
+                        modern technology with
+                        hands-on learning. We believe in learning by doing—offering practical training and real design
+                        projects that equip
+                        students of all ages and backgrounds with the skills, creativity, and confidence to excel in the
+                        fashion industry.</p>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="section-title">Contact Us</h2>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+
+                <div class="footer-section">
+                    <p>We Are Located in Kapsabet Town</p>
+                    <p>Tiryo Plaza,4th Floor(Opp.Kenya power)</p>
+                    <p>Phone: (254) 729-470-525</p>
+                    <p>Email: fashionpassdesign@gmail.com</p>
+                </div>
+
+                <div class="footer-section">
+                    <h>Quick Links</h>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=100078429900274" class="social-icon"><i
+                                class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; 2025 Fashion pass School. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navLinks = document.getElementById('navLinks');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Contact form submission
+        const contactForm = document.getElementById('contactForm');
+
+        contactForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+
+            // Reset form
+            contactForm.reset();
+        });
+    </script>
+</body>
+
+</html>
